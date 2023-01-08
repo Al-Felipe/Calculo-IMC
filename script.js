@@ -17,7 +17,7 @@ function calculoIMC() {
   if (formula < 18) {
     classificacao = "Magreza";
   }
-  if (formula >= 18.5 || formula <= 24.9) {
+  if (formula >= 18.6 && formula <= 24.9) {
     classificacao = "Normal";
   }
   if (formula >= 25 && formula <= 29.9) {
