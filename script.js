@@ -14,19 +14,15 @@ function calculoIMC() {
   const formula = peso / (altura * altura);
   resultado.innerHTML = formula.toFixed(1);
 
-  if (formula < 18) {
+  if (formula < 18.5) {
     classificacao = "Magreza";
-  }
-  if (formula >= 18.6 && formula <= 24.9) {
+  } else if (formula < 24.9) {
     classificacao = "Normal";
-  }
-  if (formula >= 25 && formula <= 29.9) {
+  } else if (formula < 29.9) {
     classificacao = "Sobrepeso";
-  }
-  if (formula >= 30 && formula <= 39.9) {
+  } else if (formula < 39.9) {
     classificacao = "Obesidade";
-  }
-  if (formula > 40) {
+  } else if (formula > 39.9) {
     classificacao = "Obesidade Grave";
   }
 
